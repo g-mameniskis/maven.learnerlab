@@ -8,7 +8,7 @@ public class TestPerson {
     // given
     private void test(String expectedName) {
         Person person = new Person(expectedName);
-        String expected = person.setName(expectedName);
+        String expected = "Grayson";
 
 
         // when
