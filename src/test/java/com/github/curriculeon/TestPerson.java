@@ -4,16 +4,19 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestPerson {
+
     // given
     private void test(String expectedName) {
-        Person person = new Person();
-        person.setName(expectedName);
-    }
-    // when
-    String actualName = person.getName();
-    // then
-    Assert.assertEquals(expectedName, actualName);
+        Person person = new Person(expectedName);
+        String expected = person.setName(expectedName);
 
+
+        // when
+        String actualName = person.getName();
+
+        // then
+        Assert.assertEquals(expected, actualName);
+    }
 
 
     @Test
