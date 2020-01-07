@@ -14,6 +14,9 @@ public class People {
     }
 
     public void findById(long id) {
-        personlist.get();
+        int listLength = personlist.size();
+        for (int i = listLength; i > 0; i--) {
+            
+        }
     }
 }
