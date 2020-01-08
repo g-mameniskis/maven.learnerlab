@@ -16,7 +16,9 @@ public class People {
     public void findById(long id) {
         int listLength = personlist.size();
         for (int i = listLength; i > 0; i--) {
-            
+            if (id == Person)
         }
     }
+
+    public void contains
 }
